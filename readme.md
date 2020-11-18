@@ -1,0 +1,1 @@
+sudo openresty -c /Users/mac/code/openresty/nginx.conf
