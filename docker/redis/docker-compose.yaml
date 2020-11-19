@@ -1,0 +1,80 @@
+version: "3.6" # 确定docker-composer文件的版本
+services: # 代表就是一组服务 - 简单来说一组容器
+  redis5_192_2: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address: 192.168.1.2   #设置ip地址
+    container_name: cluster-1 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6420:6420" # php java python 语言连接
+      - "16420:16420" # 对节点 6379 + 10000 = 端口 对节点进行通信
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/200:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+  redis5_192_3: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address: 192.168.1.3   #设置ip地址
+    container_name: cluster-2 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6421:6421"
+      - "16421:16421"
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/201:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+  redis5_192_4: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address:  192.168.1.4  #设置ip地址
+    container_name: cluster-3 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6422:6422"
+      - "16422:16422"
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/202:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+  redis5_192_5: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address: 192.168.1.5   #设置ip地址
+    container_name: cluster-4 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6423:6423"
+      - "16423:16423"
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/203:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+  redis5_192_6: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address:  192.168.1.6   #设置ip地址
+    container_name: cluster-5 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6424:6424"
+      - "16424:16424"
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/204:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+  redis5_192_7: # 这个表示服务的名称，课自定义; 注意不是容器名称
+    image: redis5 # 指定容器的镜像文件
+    networks: ## 引入外部预先定义的网段
+      redis-network:
+        ipv4_address:  192.168.1.7  #设置ip地址
+    container_name: cluster-6 # 这是容器的名称
+    ports: # 配置容器与宿主机的端口
+      - "6425:6425"
+      - "16425:16425"
+    volumes: # 配置数据挂载
+      - /Users/mac/code/openresty/docker/redis5/205:/redis
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+# 设置网络模块
+networks:
+  #引用外部预先定义好的网段
+  redis-network:
+    external:
+      name: redis-network

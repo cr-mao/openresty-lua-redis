@@ -10,7 +10,7 @@ local hash=ngx.crc32_long(id)
 ngx.header.content_type="text/plain"
 local index=(hash % table.getn(server))+1
 
---引用了包
+--引用了http 包 https://github.com/ledgetech/lua-resty-http
 local http = require "resty.http"
 local httpc = http.new()
 local res, err = httpc:request_uri("http://"..server[index], {

@@ -1,0 +1,362 @@
+1:C 31 Aug 2020 07:46:34.329 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 31 Aug 2020 07:46:34.329 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 31 Aug 2020 07:46:34.329 # Configuration loaded
+1:M 31 Aug 2020 07:46:34.331 * No cluster configuration found, I'm f0834fbe19bb5d09e0e172cd2fb39b67416a65eb
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 31 Aug 2020 07:46:34.333 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 31 Aug 2020 07:46:34.333 # Server initialized
+1:M 31 Aug 2020 07:46:34.333 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 31 Aug 2020 07:46:34.333 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 31 Aug 2020 07:46:34.334 * Ready to accept connections
+1:M 31 Aug 2020 07:46:50.218 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:signal-handler (1598860215) Received SIGTERM scheduling shutdown...
+1:M 31 Aug 2020 07:50:15.557 # User requested shutdown...
+1:M 31 Aug 2020 07:50:15.557 * Removing the pid file.
+1:M 31 Aug 2020 07:50:15.557 # Redis is now ready to exit, bye bye...
+1:C 31 Aug 2020 07:50:23.103 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 31 Aug 2020 07:50:23.103 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 31 Aug 2020 07:50:23.103 # Configuration loaded
+1:M 31 Aug 2020 07:50:23.104 * No cluster configuration found, I'm b06d474b8d1e71648d4569f1376212ad671fcbad
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 31 Aug 2020 07:50:23.106 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 31 Aug 2020 07:50:23.106 # Server initialized
+1:M 31 Aug 2020 07:50:23.106 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 31 Aug 2020 07:50:23.106 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 31 Aug 2020 07:50:23.106 * Ready to accept connections
+1:M 31 Aug 2020 07:51:42.653 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:signal-handler (1598860956) Received SIGTERM scheduling shutdown...
+1:M 31 Aug 2020 08:02:36.435 # User requested shutdown...
+1:M 31 Aug 2020 08:02:36.435 * Removing the pid file.
+1:M 31 Aug 2020 08:02:36.435 # Redis is now ready to exit, bye bye...
+1:C 31 Aug 2020 08:08:38.516 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 31 Aug 2020 08:08:38.516 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 31 Aug 2020 08:08:38.516 # Configuration loaded
+1:M 31 Aug 2020 08:08:38.518 * No cluster configuration found, I'm 78bd8cfefd8fc6e853f043c5026af94398eb7b46
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 31 Aug 2020 08:08:38.520 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 31 Aug 2020 08:08:38.520 # Server initialized
+1:M 31 Aug 2020 08:08:38.520 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+1:M 31 Aug 2020 08:08:38.520 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 31 Aug 2020 08:08:38.520 * Ready to accept connections
+1:M 31 Aug 2020 08:51:28.719 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:M 31 Aug 2020 08:51:28.842 # IP address for this node updated to 175.200.7.203
+1:S 31 Aug 2020 08:51:32.739 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 31 Aug 2020 08:51:32.739 # Cluster state changed: ok
+1:S 31 Aug 2020 08:51:32.995 * Connecting to MASTER 175.200.7.202:6379
+1:S 31 Aug 2020 08:51:32.996 * MASTER <-> REPLICA sync started
+1:S 31 Aug 2020 08:51:32.996 * Non blocking connect for SYNC fired the event.
+1:S 31 Aug 2020 08:51:32.996 * Master replied to PING, replication can continue...
+1:S 31 Aug 2020 08:51:32.997 * Trying a partial resynchronization (request 2064ea417920829e86239f2cf73ab6c995043dd2:1).
+1:S 31 Aug 2020 08:51:32.998 * Full resync from master: 0bd7e10b8a28839a2344f8008bf6a3acd41df7f7:0
+1:S 31 Aug 2020 08:51:32.998 * Discarding previously cached master state.
+1:S 31 Aug 2020 08:51:33.099 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 31 Aug 2020 08:51:33.099 * MASTER <-> REPLICA sync: Flushing old data
+1:S 31 Aug 2020 08:51:33.099 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 31 Aug 2020 08:51:33.099 * MASTER <-> REPLICA sync: Finished with success
+1:S 17 Nov 2020 13:49:06.545 # MASTER timeout: no data nor PING received...
+1:S 17 Nov 2020 13:49:06.551 # Connection with master lost.
+1:S 17 Nov 2020 13:49:06.558 * Caching the disconnected master state.
+1:S 17 Nov 2020 13:49:06.561 * Connecting to MASTER 172.10.10.192:6322
+1:S 17 Nov 2020 13:49:06.565 * MASTER <-> REPLICA sync started
+1:S 17 Nov 2020 13:49:06.568 * Non blocking connect for SYNC fired the event.
+1:S 17 Nov 2020 13:49:06.572 * Master replied to PING, replication can continue...
+1:S 17 Nov 2020 13:49:06.576 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:771).
+1:S 17 Nov 2020 13:49:06.596 * Successful partial resynchronization with master.
+1:S 17 Nov 2020 13:49:06.602 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 17 Nov 2020 22:28:37.902 # MASTER timeout: no data nor PING received...
+1:S 17 Nov 2020 22:28:37.905 # Connection with master lost.
+1:S 17 Nov 2020 22:28:37.907 * Caching the disconnected master state.
+1:S 17 Nov 2020 22:28:37.912 * Connecting to MASTER 172.10.10.192:6322
+1:S 17 Nov 2020 22:28:37.917 * MASTER <-> REPLICA sync started
+1:S 17 Nov 2020 22:28:37.920 * Non blocking connect for SYNC fired the event.
+1:S 17 Nov 2020 22:28:37.925 * Master replied to PING, replication can continue...
+1:S 17 Nov 2020 22:28:37.931 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:9479).
+1:S 17 Nov 2020 22:28:37.939 * Successful partial resynchronization with master.
+1:S 17 Nov 2020 22:28:37.940 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 00:07:29.024 # Connection with master lost.
+1:S 18 Nov 2020 00:07:29.026 * Caching the disconnected master state.
+1:S 18 Nov 2020 00:07:29.117 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 00:07:29.119 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 00:07:29.121 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 00:07:29.124 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 00:07:29.126 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:16997).
+1:S 18 Nov 2020 00:07:29.131 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 00:07:29.133 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 01:30:50.105 # MASTER timeout: no data nor PING received...
+1:S 18 Nov 2020 01:30:50.108 # Connection with master lost.
+1:S 18 Nov 2020 01:30:51.157 * Caching the disconnected master state.
+1:S 18 Nov 2020 01:30:51.166 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 01:30:51.175 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 01:30:51.182 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 01:30:51.185 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 01:30:51.189 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:17067).
+1:S 18 Nov 2020 01:30:51.196 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 01:30:51.198 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 11:45:55.484 # Connection with master lost.
+1:S 18 Nov 2020 11:45:55.485 * Caching the disconnected master state.
+1:S 18 Nov 2020 11:45:55.656 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 11:45:55.658 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 11:45:55.660 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 11:45:55.662 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 11:45:55.665 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:62539).
+1:S 18 Nov 2020 11:45:55.669 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 11:45:55.671 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 18:55:31.332 # Connection with master lost.
+1:S 18 Nov 2020 18:55:31.334 * Caching the disconnected master state.
+1:S 18 Nov 2020 18:55:31.532 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 18:55:31.534 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 18:55:31.536 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 18:55:31.539 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 18:55:31.541 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:83245).
+1:S 18 Nov 2020 18:55:31.546 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 18:55:31.547 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 21:13:01.693 # Connection with master lost.
+1:S 18 Nov 2020 21:13:01.710 * Caching the disconnected master state.
+1:S 18 Nov 2020 21:13:02.052 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 21:13:02.056 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 21:13:02.058 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 21:13:02.062 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 21:13:02.065 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:83245).
+1:S 18 Nov 2020 21:13:02.072 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 21:13:02.074 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 18 Nov 2020 23:56:24.493 # Connection with master lost.
+1:S 18 Nov 2020 23:56:24.496 * Caching the disconnected master state.
+1:S 18 Nov 2020 23:56:24.888 * Connecting to MASTER 172.10.10.192:6322
+1:S 18 Nov 2020 23:56:24.891 * MASTER <-> REPLICA sync started
+1:S 18 Nov 2020 23:56:24.893 * Non blocking connect for SYNC fired the event.
+1:S 18 Nov 2020 23:56:24.895 * Master replied to PING, replication can continue...
+1:S 18 Nov 2020 23:56:24.898 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:88621).
+1:S 18 Nov 2020 23:56:24.909 * Successful partial resynchronization with master.
+1:S 18 Nov 2020 23:56:24.912 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 19 Nov 2020 01:24:28.160 # MASTER timeout: no data nor PING received...
+1:S 19 Nov 2020 01:24:28.171 # Connection with master lost.
+1:S 19 Nov 2020 01:24:28.182 * Caching the disconnected master state.
+1:S 19 Nov 2020 01:24:28.192 * Connecting to MASTER 172.10.10.192:6322
+1:S 19 Nov 2020 01:24:28.196 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 01:24:28.199 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 01:24:28.203 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 01:24:28.208 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:89727).
+1:S 19 Nov 2020 01:24:28.215 * Successful partial resynchronization with master.
+1:S 19 Nov 2020 01:24:28.217 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 19 Nov 2020 04:44:54.279 # MASTER timeout: no data nor PING received...
+1:S 19 Nov 2020 04:44:54.282 # Connection with master lost.
+1:S 19 Nov 2020 04:44:54.284 * Caching the disconnected master state.
+1:S 19 Nov 2020 04:44:54.287 * Connecting to MASTER 172.10.10.192:6322
+1:S 19 Nov 2020 04:44:54.289 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 04:44:54.291 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 04:44:54.293 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 04:44:54.295 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:104749).
+1:S 19 Nov 2020 04:44:54.300 * Successful partial resynchronization with master.
+1:S 19 Nov 2020 04:44:54.301 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 19 Nov 2020 05:30:29.390 # MASTER timeout: no data nor PING received...
+1:S 19 Nov 2020 05:30:29.392 # Connection with master lost.
+1:S 19 Nov 2020 05:30:29.393 * Caching the disconnected master state.
+1:S 19 Nov 2020 05:30:29.395 * Connecting to MASTER 172.10.10.192:6322
+1:S 19 Nov 2020 05:30:29.397 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 05:30:29.398 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 05:30:29.400 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 05:30:29.402 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:108445).
+1:S 19 Nov 2020 05:30:29.406 * Successful partial resynchronization with master.
+1:S 19 Nov 2020 05:30:29.407 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 19 Nov 2020 12:08:48.482 # MASTER timeout: no data nor PING received...
+1:S 19 Nov 2020 12:08:48.484 # Connection with master lost.
+1:S 19 Nov 2020 12:08:48.485 * Caching the disconnected master state.
+1:S 19 Nov 2020 12:08:48.488 * Connecting to MASTER 172.10.10.192:6322
+1:S 19 Nov 2020 12:08:48.490 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 12:08:48.492 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 12:08:48.494 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 12:08:48.497 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:134485).
+1:S 19 Nov 2020 12:08:48.501 * Successful partial resynchronization with master.
+1:S 19 Nov 2020 12:08:48.503 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 19 Nov 2020 13:36:45.082 # MASTER timeout: no data nor PING received...
+1:S 19 Nov 2020 13:36:45.084 # Connection with master lost.
+1:S 19 Nov 2020 13:36:45.086 * Caching the disconnected master state.
+1:S 19 Nov 2020 13:36:45.088 * Connecting to MASTER 172.10.10.192:6322
+1:S 19 Nov 2020 13:36:45.090 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 13:36:45.093 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 13:36:45.096 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 13:36:45.099 * Trying a partial resynchronization (request de9140f1e18bddaa42e7e536c0b76b1d356979a4:141681).
+1:S 19 Nov 2020 13:36:45.104 * Successful partial resynchronization with master.
+1:S 19 Nov 2020 13:36:45.106 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:C 19 Nov 2020 14:33:54.988 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Nov 2020 14:33:54.990 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Nov 2020 14:33:54.992 # Configuration loaded
+1:M 19 Nov 2020 14:33:55.000 * No cluster configuration found, I'm 59cbaed47d86c3796416e6a6ff027253e4b3df41
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 19 Nov 2020 14:33:55.014 # Server initialized
+1:M 19 Nov 2020 14:33:55.020 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Nov 2020 14:33:55.033 * DB loaded from disk: 0.008 seconds
+1:M 19 Nov 2020 14:33:55.041 * Ready to accept connections
+1:M 19 Nov 2020 14:37:17.965 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:M 19 Nov 2020 14:37:18.099 # IP address for this node updated to 192.168.1.5
+1:S 19 Nov 2020 14:37:21.992 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 19 Nov 2020 14:37:21.994 # Cluster state changed: ok
+1:S 19 Nov 2020 14:37:22.345 * Connecting to MASTER 192.168.1.4:6422
+1:S 19 Nov 2020 14:37:22.348 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 14:37:22.351 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 14:37:22.355 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 14:37:22.357 * Trying a partial resynchronization (request 263d705e19be716356c2885defbddb8b9a4b3e3d:1).
+1:S 19 Nov 2020 14:37:22.365 * Full resync from master: 75384d6567daadd8b09c128c04f081a5b9357d53:0
+1:S 19 Nov 2020 14:37:22.366 * Discarding previously cached master state.
+1:S 19 Nov 2020 14:37:22.452 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 19 Nov 2020 14:37:22.458 * MASTER <-> REPLICA sync: Flushing old data
+1:S 19 Nov 2020 14:37:22.460 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 19 Nov 2020 14:37:22.464 * MASTER <-> REPLICA sync: Finished with success
+1:signal-handler (1605796933) Received SIGTERM scheduling shutdown...
+1:S 19 Nov 2020 14:42:13.623 # User requested shutdown...
+1:S 19 Nov 2020 14:42:13.627 * Removing the pid file.
+1:S 19 Nov 2020 14:42:13.637 # Redis is now ready to exit, bye bye...
+1:C 19 Nov 2020 14:42:25.994 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Nov 2020 14:42:25.997 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Nov 2020 14:42:26.000 # Configuration loaded
+1:M 19 Nov 2020 14:42:26.013 * Node configuration loaded, I'm 59cbaed47d86c3796416e6a6ff027253e4b3df41
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 19 Nov 2020 14:42:26.024 # Server initialized
+1:M 19 Nov 2020 14:42:26.028 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Nov 2020 14:42:26.043 * DB loaded from disk: 0.011 seconds
+1:M 19 Nov 2020 14:42:26.052 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:M 19 Nov 2020 14:42:26.057 * Ready to accept connections
+1:S 19 Nov 2020 14:42:26.064 * Discarding previously cached master state.
+1:S 19 Nov 2020 14:42:26.066 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 19 Nov 2020 14:42:26.069 # Cluster state changed: ok
+1:S 19 Nov 2020 14:42:27.077 * Connecting to MASTER 192.168.1.4:6422
+1:S 19 Nov 2020 14:42:27.079 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 14:42:27.080 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 14:42:27.082 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 14:42:27.083 * Trying a partial resynchronization (request 75384d6567daadd8b09c128c04f081a5b9357d53:1).
+1:S 19 Nov 2020 14:42:27.092 * Full resync from master: 1b556333c4566ccc73254078a4d73575b8eb55e9:0
+1:S 19 Nov 2020 14:42:27.101 * Discarding previously cached master state.
+1:S 19 Nov 2020 14:42:27.206 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 19 Nov 2020 14:42:27.210 * MASTER <-> REPLICA sync: Flushing old data
+1:S 19 Nov 2020 14:42:27.212 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 19 Nov 2020 14:42:27.215 * MASTER <-> REPLICA sync: Finished with success
+1:signal-handler (1605797027) Received SIGTERM scheduling shutdown...
+1:S 19 Nov 2020 14:43:47.906 # User requested shutdown...
+1:S 19 Nov 2020 14:43:47.908 * Removing the pid file.
+1:S 19 Nov 2020 14:43:47.911 # Redis is now ready to exit, bye bye...
+1:C 19 Nov 2020 14:43:59.018 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Nov 2020 14:43:59.022 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Nov 2020 14:43:59.026 # Configuration loaded
+1:M 19 Nov 2020 14:43:59.034 * No cluster configuration found, I'm 7ca81453024c80297d2a8190849347e60e4aa27e
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 19 Nov 2020 14:43:59.041 # Server initialized
+1:M 19 Nov 2020 14:43:59.044 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Nov 2020 14:43:59.049 * DB loaded from disk: 0.003 seconds
+1:M 19 Nov 2020 14:43:59.051 * Ready to accept connections
+1:M 19 Nov 2020 14:44:39.107 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:M 19 Nov 2020 14:44:39.257 # IP address for this node updated to 192.168.1.5
+1:S 19 Nov 2020 14:44:44.137 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 19 Nov 2020 14:44:44.138 # Cluster state changed: ok
+1:S 19 Nov 2020 14:44:44.503 * Connecting to MASTER 192.168.1.4:6422
+1:S 19 Nov 2020 14:44:44.505 * MASTER <-> REPLICA sync started
+1:S 19 Nov 2020 14:44:44.507 * Non blocking connect for SYNC fired the event.
+1:S 19 Nov 2020 14:44:44.509 * Master replied to PING, replication can continue...
+1:S 19 Nov 2020 14:44:44.511 * Trying a partial resynchronization (request 27ded2143d7cb66ce9a8a14f42162be5200a87d8:1).
+1:S 19 Nov 2020 14:44:44.521 * Full resync from master: ba1a63cfc701e8f712caa796d86f4f688c638605:0
+1:S 19 Nov 2020 14:44:44.523 * Discarding previously cached master state.
+1:S 19 Nov 2020 14:44:44.608 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 19 Nov 2020 14:44:44.616 * MASTER <-> REPLICA sync: Flushing old data
+1:S 19 Nov 2020 14:44:44.619 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 19 Nov 2020 14:44:44.630 * MASTER <-> REPLICA sync: Finished with success

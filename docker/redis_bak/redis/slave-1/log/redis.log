@@ -1,0 +1,25 @@
+6:C 19 Nov 2020 13:50:03.644 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+6:C 19 Nov 2020 13:50:03.646 # Redis version=5.0.5, bits=64, commit=00000000, modified=0, pid=6, just started
+6:C 19 Nov 2020 13:50:03.649 # Configuration loaded
+6:M 19 Nov 2020 13:50:03.666 * No cluster configuration found, I'm 1522ebfda3556af2c587c8661d2f0174be6ac4dc
+6:M 19 Nov 2020 13:50:03.690 * Running mode=cluster, port=6379.
+6:M 19 Nov 2020 13:50:03.701 # Server initialized
+6:M 19 Nov 2020 13:50:03.704 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+6:M 19 Nov 2020 13:50:03.710 * Ready to accept connections
+6:M 19 Nov 2020 13:57:30.106 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+10:C 19 Nov 2020 14:06:44.513 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+10:C 19 Nov 2020 14:06:44.516 # Redis version=5.0.5, bits=64, commit=00000000, modified=0, pid=10, just started
+10:C 19 Nov 2020 14:06:44.519 # Configuration loaded
+10:M 19 Nov 2020 14:06:44.546 * Node configuration loaded, I'm 1522ebfda3556af2c587c8661d2f0174be6ac4dc
+10:M 19 Nov 2020 14:06:44.551 * Running mode=cluster, port=6379.
+10:M 19 Nov 2020 14:06:44.555 # Server initialized
+10:M 19 Nov 2020 14:06:44.556 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+10:M 19 Nov 2020 14:06:44.566 * Ready to accept connections
+6:C 19 Nov 2020 14:12:03.674 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+6:C 19 Nov 2020 14:12:03.682 # Redis version=5.0.5, bits=64, commit=00000000, modified=0, pid=6, just started
+6:C 19 Nov 2020 14:12:03.685 # Configuration loaded
+6:M 19 Nov 2020 14:12:03.700 * Node configuration loaded, I'm 1522ebfda3556af2c587c8661d2f0174be6ac4dc
+6:M 19 Nov 2020 14:12:03.707 * Running mode=cluster, port=6379.
+6:M 19 Nov 2020 14:12:03.710 # Server initialized
+6:M 19 Nov 2020 14:12:03.716 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+6:M 19 Nov 2020 14:12:03.723 * Ready to accept connections
