@@ -429,3 +429,31 @@
 1:S 20 Nov 2020 01:28:44.549 * Trying a partial resynchronization (request 4d104879d7ae7be697daf4a7adfa1d44bf57f832:11698).
 1:S 20 Nov 2020 01:28:44.553 * Successful partial resynchronization with master.
 1:S 20 Nov 2020 01:28:44.555 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 20 Nov 2020 05:13:03.181 # Connection with master lost.
+1:S 20 Nov 2020 05:13:03.187 * Caching the disconnected master state.
+1:S 20 Nov 2020 05:13:03.267 * Connecting to MASTER 192.168.1.3:6421
+1:S 20 Nov 2020 05:13:03.270 * MASTER <-> REPLICA sync started
+1:S 20 Nov 2020 05:13:03.277 * Non blocking connect for SYNC fired the event.
+1:S 20 Nov 2020 05:13:03.283 * Master replied to PING, replication can continue...
+1:S 20 Nov 2020 05:13:03.287 * Trying a partial resynchronization (request 4d104879d7ae7be697daf4a7adfa1d44bf57f832:29786).
+1:S 20 Nov 2020 05:13:03.294 * Successful partial resynchronization with master.
+1:S 20 Nov 2020 05:13:03.296 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 20 Nov 2020 11:52:11.405 # MASTER timeout: no data nor PING received...
+1:S 20 Nov 2020 11:52:11.408 # Connection with master lost.
+1:S 20 Nov 2020 11:52:11.411 * Caching the disconnected master state.
+1:S 20 Nov 2020 11:52:11.416 * Connecting to MASTER 192.168.1.3:6421
+1:S 20 Nov 2020 11:52:11.420 * MASTER <-> REPLICA sync started
+1:S 20 Nov 2020 11:52:11.422 * Non blocking connect for SYNC fired the event.
+1:S 20 Nov 2020 11:52:11.426 * Master replied to PING, replication can continue...
+1:S 20 Nov 2020 11:52:11.432 * Trying a partial resynchronization (request 4d104879d7ae7be697daf4a7adfa1d44bf57f832:57184).
+1:S 20 Nov 2020 11:52:11.438 * Successful partial resynchronization with master.
+1:S 20 Nov 2020 11:52:11.441 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 20 Nov 2020 12:02:45.046 # Connection with master lost.
+1:S 20 Nov 2020 12:02:45.050 * Caching the disconnected master state.
+1:S 20 Nov 2020 12:02:45.944 * Connecting to MASTER 192.168.1.3:6421
+1:S 20 Nov 2020 12:02:45.946 * MASTER <-> REPLICA sync started
+1:S 20 Nov 2020 12:02:45.948 * Non blocking connect for SYNC fired the event.
+1:S 20 Nov 2020 12:02:45.951 * Master replied to PING, replication can continue...
+1:S 20 Nov 2020 12:02:45.953 * Trying a partial resynchronization (request 4d104879d7ae7be697daf4a7adfa1d44bf57f832:57632).
+1:S 20 Nov 2020 12:02:45.958 * Successful partial resynchronization with master.
+1:S 20 Nov 2020 12:02:45.960 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
