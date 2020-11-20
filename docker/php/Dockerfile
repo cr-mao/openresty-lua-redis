@@ -10,9 +10,9 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
   && rm -rf /var/cache/apk/*
 
 # Composer
-RUN curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/local/bin/composer \
-    && composer self-update --clean-backups
+WORKDIR /var/www/html
+RUN wget -O /var/www/html/composer.phar https://install.phpcomposer.com/composer.phar  \
+    && chmod +x composer.phar && mv composer.phar /usr/local/bin/composer
 
 # docker方式安装PDO extension
 RUN docker-php-ext-install pdo_mysql
