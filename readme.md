@@ -31,5 +31,5 @@ redis-cli --cluster create 192.168.1.2:6420 192.168.1.3:6421 192.168.1.4:6422 19
 
 redis 测试
 ```shell  
-redis-cli -a sixstar -h 192.168.1.2 -p 6420 -c
+redis-cli  -h 192.168.1.2 -p 6420 -c
 ```

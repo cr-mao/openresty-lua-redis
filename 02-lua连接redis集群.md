@@ -1,10 +1,9 @@
-#user  nobody;
+
+https://github.com/steve0511/resty-redis-cluster
+
+```nginx 
 worker_processes  1;
 daemon off; # 避免nginx在后台运行
-#error_log  logs/error.log;
-#error_log  logs/error.log  notice;
-#error_log  logs/error.log  info;
-#pid        logs/nginx.pid;
 events {
     worker_connections  1024;
 }
@@ -13,35 +12,19 @@ http {
     include       mime.types;
     default_type  application/octet-stream;
     lua_code_cache off; #关闭代码缓存
-    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-    #                  '$status $body_bytes_sent "$http_referer" '
-    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-    #access_log  logs/access.log  main;
     sendfile        on;
-    #tcp_nopush     on;
-
-    #keepalive_timeout  0;
     keepalive_timeout  65;
-    #gzip  on;
     lua_shared_dict redis_cluster_slot_locks 100k;
-
     lua_package_path "/usr/local/openresty/lualib/project/common/lualib/?.lua;;/usr/local/openresty/lualib/project/common/resty-redis-cluster/lib/?.lua;;";
+    # 加载c动态库
     lua_package_cpath "/usr/local/openresty/lualib/project/common/resty-redis-cluster/src/?.so;;";
 
     server {
         listen       80;
         location /{
-            #root   /www;
-            #content_by_lua '
-            #    ngx.header.content_type="text/plain";
-            #    ngx.say (ngx.var.test);
-            #';
-           content_by_lua_file /usr/local/openresty/lualib/project/application.lua;
+           content_by_lua_file /usr/local/openresty/lualib/project//application.lua;
            #index  index.html index.htm;
         }
-        #error_page  404              /404.html;
-        # redirect server error pages to the static page /50x.html
-        #
         error_page   500 502 503 504  /50x.html;
         location = /50x.html {
             root   html;
@@ -68,5 +51,35 @@ http {
         }
     }
 
+```
 
+```lua 
+local config = {
+    name = "testCluster",                   --rediscluster name
+    serv_list = {                           --redis cluster node list(host and port),
+        { ip = "192.168.1.2 ",port = 6420 },
+        { ip = "192.168.1.3", port = 6421 },
+        { ip = "192.168.1.4", port = 6422 },
+        { ip = "192.168.1.5", port = 6423 },
+        { ip = "192.168.1.6", port = 6424 },
+        { ip = "192.168.1.7", port = 6425 }
+    },
+    keepalive_timeout = 60000,              --redis connection pool idle timeout
+    keepalive_cons = 1000,                  --redis connection pool size
+    connect_timeout = 1000,              --timeout while connecting
+    max_redirection = 5,                    --maximum retry attempts for redirection
+    max_connection_attempts = 1,            --maximum retry attempts for connection
+                                            -- auth="password"
 }
+
+local redis_cluster = require "rediscluster"
+local red_c = redis_cluster:new(config)
+
+local v, err = red_c:get("name")
+if err then
+    ngx.log(ngx.ERR, "err: ", err)
+else
+    ngx.say(v)
+end
+
+```

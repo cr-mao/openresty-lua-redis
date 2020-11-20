@@ -1,7 +1,7 @@
 local config = {
     name = "testCluster",                   --rediscluster name
     serv_list = {                           --redis cluster node list(host and port),
-        { ip = "192.168.1.2 ", port = 6420 },
+        { ip = "192.168.1.2 ",port = 6420 },
         { ip = "192.168.1.3", port = 6421 },
         { ip = "192.168.1.4", port = 6422 },
         { ip = "192.168.1.5", port = 6423 },
@@ -12,7 +12,8 @@ local config = {
     keepalive_cons = 1000,                  --redis connection pool size
     connect_timeout = 1000,              --timeout while connecting
     max_redirection = 5,                    --maximum retry attempts for redirection
-    max_connection_attempts = 1             --maximum retry attempts for connection
+    max_connection_attempts = 1,            --maximum retry attempts for connection
+                                            -- auth="password"
 }
 
 local redis_cluster = require "rediscluster"
