@@ -28,3 +28,8 @@ docker-composer up -d
 docker exec -it cluster-1 /bin/sh
 redis-cli --cluster create 192.168.1.2:6420 192.168.1.3:6421 192.168.1.4:6422 192.168.1.5:6423 192.168.1.6:6424 192.168.1.7:6425 --cluster-replicas 1
 ```
+
+redis 测试
+```shell  
+redis-cli -a sixstar -h 192.168.1.2 -p 6420 -c
+```
