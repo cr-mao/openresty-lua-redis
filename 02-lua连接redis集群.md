@@ -1,6 +1,17 @@
 
-https://github.com/steve0511/resty-redis-cluster
 
+### 使用resty-redis-cluster 集群连接
+https://github.com/steve0511/resty-redis-cluster 
+老版本 
+
+见 ./project/code/nginx/application/common/resty-redis-cluster-master
+README.md
+
+so文件需要make 
+
+
+
+### 应用层 nginx 相应配置
 ```nginx 
 worker_processes  1;
 daemon off; # 避免nginx在后台运行
@@ -53,6 +64,8 @@ http {
 
 ```
 
+
+### lua 连接redis 集群
 ```lua 
 local config = {
     name = "testCluster",                   --rediscluster name
@@ -81,5 +94,63 @@ if err then
 else
     ngx.say(v)
 end
+
+```
+
+
+
+
+#### 使用OpenResty 组件管理工具   opm
+
+OpenResty 维护一个官方组件库（opm.openresty.org）,opm 就是库的客户端，可以把组件库里的组件下载到本地，并管理本地的组件列表。
+opm 的用法很简单，常用的命令有：
+
+
+search：以关键字搜索关键的组件。
+
+get：安装功能组件（注意不是 install）。
+
+info：显示已安装组件的详细信息。
+
+list：列出所有本地已经安装的组件。
+
+upgrad：更新某个已安装组件。
+
+update：更新所有已安装组件。
+
+remove：移除某个已安装组件。
+
+opm 默认的操作目录是 “/usr/local/openresty/site”，但是也可以在命令行参数 “--install-dir=PATH” 安装到其他目录，或者用参数 “–cwd” 安装到当前目录的
+"./resty_module/" 目录里。
+
+注意：要使用opm我们的环境当中还缺少一个依赖 
+
+```shell
+ ln -s `pwd`/opm  /usr/local/bin/opm
+
+yum install perl-Digest-MD5 -y
+
+
+opm search consul 
+
+```
+
+
+#### 声明一个共享内存区域
+
+ syntax：lua_shared_dict <name> <size>
+ 
+ 声明一个共享内存区域 name，以充当基于 Lua 字典 ngx.shared. 的共享存储。 共享内存总是被当前 Nginx 服务器实例中所有的 Nginx worker 进程所共享。
+ 
+ 
+ #### 核心的api地址
+ https://github.com/openresty/lua-nginx-module
+ 
+ 
+ #### 把连接redis集群地址改成从consul中定时获取 到  lua_shared_dict
+ 
+ 安装consul操作组件
+ ```shell 
+ opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/lua-resty-consul
 
 ```
