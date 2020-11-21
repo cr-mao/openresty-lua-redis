@@ -33,3 +33,10 @@ redis 测试
 ```shell  
 redis-cli  -h 192.168.1.2 -p 6420 -c
 ```
+
+
+## 文档
+
+[01-openresty使用动态负载均衡](01-openresty使用动态负载均衡.md)
+
+[02-lua连接redis集群](02-lua连接redis集群.md)

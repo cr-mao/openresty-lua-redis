@@ -7,7 +7,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
         ipv4_address: 192.168.1.2   #设置ip地址
     container_name: cluster-1 # 这是容器的名称
     ports: # 配置容器与宿主机的端口
-      - "6420:6420" # php java python 语言连接
+      - "6420:6420"
       - "16420:16420" # 对节点 6379 + 10000 = 端口 对节点进行通信
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/200:/redis

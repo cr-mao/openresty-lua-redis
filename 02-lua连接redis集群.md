@@ -1,6 +1,6 @@
 
 
-### 使用resty-redis-cluster 集群连接
+### 使用resty-redis-cluster  操作redis集群
 https://github.com/steve0511/resty-redis-cluster 
 老版本 
 
@@ -100,7 +100,7 @@ end
 
 
 
-#### 使用OpenResty 组件管理工具   opm
+#### 使用OpenResty 组件管理工具   opm 下载 操作consul的组件
 
 OpenResty 维护一个官方组件库（opm.openresty.org）,opm 就是库的客户端，可以把组件库里的组件下载到本地，并管理本地的组件列表。
 opm 的用法很简单，常用的命令有：
@@ -126,34 +126,31 @@ opm 默认的操作目录是 “/usr/local/openresty/site”，但是也可以�
 注意：要使用opm我们的环境当中还缺少一个依赖 
 
 ```shell
- ln -s `pwd`/opm  /usr/local/bin/opm
+ # ln -s `pwd`/opm  /usr/local/bin/opm
 
 yum install perl-Digest-MD5 -y
 
 
 opm search consul 
 
+# 安装操作consul组件
+opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/lua-resty-consul
+
 ```
 
 
-#### 声明一个共享内存区域
 
  syntax：lua_shared_dict <name> <size>
  
  声明一个共享内存区域 name，以充当基于 Lua 字典 ngx.shared. 的共享存储。 共享内存总是被当前 Nginx 服务器实例中所有的 Nginx worker 进程所共享。
  
  
- #### 核心的api地址
+**核心的api地址**
  https://github.com/openresty/lua-nginx-module
  
  
- #### 把连接redis集群地址改成从consul中定时获取 到  lua_shared_dict
- 
- 安装consul操作组件
- ```shell 
- opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/lua-resty-consul
+ #### 从consul中获得redis 节点地址，放到 共享 lua_shared_dict.redis_cluster_addr中
 
-```
 
 ```redis 节点注册到consul
 curl -X PUT -d '192.168.1.2:6420' http://127.0.0.1:8700/v1/kv/redis-cluster-1/
@@ -162,7 +159,18 @@ curl -X PUT -d '192.168.1.4:6422' http://127.0.0.1:8700/v1/kv/redis-cluster-3/
 curl -X PUT -d '192.168.1.5:6423' http://127.0.0.1:8700/v1/kv/redis-cluster-4/
 curl -X PUT -d '192.168.1.6:6424' http://127.0.0.1:8700/v1/kv/redis-cluster-5/
 curl -X PUT -d '192.168.1.7:6425' http://127.0.0.1:8700/v1/kv/redis-cluster-6/
-
-
-
 ```
+
+
+
+nginx增加
+
+```nginx 
+    # 集群地址 内存共享
+    lua_shared_dict  redis_cluster_addr 20k;
+    # work进程启动， 从consul中获得redis 节点地址，放到 共享 lua_shared_dict redis_cluster_addr中
+    init_worker_by_lua_file /usr/local/openresty/lualib/project/init.lua;
+```
+代码见
+./project/code/nginx/application/init.lua
+./project/code/nginx/application/application.lua
