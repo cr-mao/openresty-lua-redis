@@ -2,4 +2,5 @@
 *.zip
 *.gz
 **/*.log
-*.rdb
+**/*.rdb
+
