@@ -154,3 +154,15 @@ opm search consul
  opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/lua-resty-consul
 
 ```
+
+```redis 节点注册到consul
+curl -X PUT -d '192.168.1.2:6420' http://127.0.0.1:8700/v1/kv/redis-cluster-1/
+curl -X PUT -d '192.168.1.3:6421' http://127.0.0.1:8700/v1/kv/redis-cluster-2/
+curl -X PUT -d '192.168.1.4:6422' http://127.0.0.1:8700/v1/kv/redis-cluster-3/
+curl -X PUT -d '192.168.1.5:6423' http://127.0.0.1:8700/v1/kv/redis-cluster-4/
+curl -X PUT -d '192.168.1.6:6424' http://127.0.0.1:8700/v1/kv/redis-cluster-5/
+curl -X PUT -d '192.168.1.7:6425' http://127.0.0.1:8700/v1/kv/redis-cluster-6/
+
+
+
+```
