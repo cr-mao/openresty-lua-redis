@@ -300,3 +300,36 @@
 1:M 20 Nov 2020 12:02:45.048 # Connection with replica 192.168.1.6:6424 lost.
 1:M 20 Nov 2020 12:02:45.083 * Replica 192.168.1.6:6424 asks for synchronization
 1:M 20 Nov 2020 12:02:45.086 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 57634.
+1:M 21 Nov 2020 15:55:24.750 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 15:55:24.760 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 15:55:24.761 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 60131.
+1:M 21 Nov 2020 16:44:28.281 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 16:44:28.367 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 16:44:28.375 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61489.
+1:M 21 Nov 2020 18:03:16.725 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 21 Nov 2020 18:03:16.736 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 18:03:16.820 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 18:03:16.834 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61573.
+1:M 21 Nov 2020 19:51:20.173 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 21 Nov 2020 19:51:20.179 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 19:51:20.199 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 19:51:20.200 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61643.
+1:M 21 Nov 2020 20:12:36.715 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 21 Nov 2020 20:12:36.729 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 20:12:36.824 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 20:12:36.833 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61685.
+1:M 21 Nov 2020 21:41:13.191 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 21 Nov 2020 21:41:13.196 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 21:41:13.227 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 21:41:13.231 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61769.
+1:M 21 Nov 2020 22:28:14.740 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 21 Nov 2020 22:28:14.752 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 22:28:14.815 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 22:28:14.822 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 61839.
+1:M 21 Nov 2020 23:55:40.925 # Connection with replica 192.168.1.6:6424 lost.
+1:M 21 Nov 2020 23:55:40.958 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 21 Nov 2020 23:55:40.968 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 68223.
+1:M 22 Nov 2020 07:39:54.569 # Disconnecting timedout replica: 192.168.1.6:6424
+1:M 22 Nov 2020 07:39:54.571 # Connection with replica 192.168.1.6:6424 lost.
+1:M 22 Nov 2020 07:39:54.604 * Replica 192.168.1.6:6424 asks for synchronization
+1:M 22 Nov 2020 07:39:54.607 * Partial resynchronization request from 192.168.1.6:6424 accepted. Sending 0 bytes of backlog starting from offset 98687.
