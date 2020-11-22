@@ -17,6 +17,7 @@ RUN mkdir -p /usr/src/redis \
     && rm -rf redis-5.0.7.tar.gz
 
 RUN apk del gcc g++ libc-dev  openssl-dev make  linux-headers
+# 做 redisbloom的使用 要有make
 
 COPY ./conf/redis.conf /redis/conf/redis.conf
 

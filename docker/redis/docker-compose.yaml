@@ -11,7 +11,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16420:16420" # 对节点 6379 + 10000 = 端口 对节点进行通信
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/200:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
   redis5_192_3: # 这个表示服务的名称，课自定义; 注意不是容器名称
     image: redis5 # 指定容器的镜像文件
     networks: ## 引入外部预先定义的网段
@@ -23,7 +23,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16421:16421"
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/201:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
   redis5_192_4: # 这个表示服务的名称，课自定义; 注意不是容器名称
     image: redis5 # 指定容器的镜像文件
     networks: ## 引入外部预先定义的网段
@@ -35,7 +35,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16422:16422"
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/202:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
   redis5_192_5: # 这个表示服务的名称，课自定义; 注意不是容器名称
     image: redis5 # 指定容器的镜像文件
     networks: ## 引入外部预先定义的网段
@@ -47,7 +47,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16423:16423"
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/203:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
   redis5_192_6: # 这个表示服务的名称，课自定义; 注意不是容器名称
     image: redis5 # 指定容器的镜像文件
     networks: ## 引入外部预先定义的网段
@@ -59,7 +59,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16424:16424"
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/204:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
   redis5_192_7: # 这个表示服务的名称，课自定义; 注意不是容器名称
     image: redis5 # 指定容器的镜像文件
     networks: ## 引入外部预先定义的网段
@@ -71,7 +71,7 @@ services: # 代表就是一组服务 - 简单来说一组容器
       - "16425:16425"
     volumes: # 配置数据挂载
       - /Users/mac/code/openresty/docker/redis5/205:/redis
-    command: /usr/local/bin/redis-server /redis/conf/redis.conf
+    command: /usr/local/bin/redis-server /redis/conf/redis.conf  --loadmodule /redis/redisbloom.so
 # 设置网络模块
 networks:
   #引用外部预先定义好的网段

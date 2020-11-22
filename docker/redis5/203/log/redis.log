@@ -544,3 +544,140 @@
 1:S 22 Nov 2020 07:39:54.699 * Trying a partial resynchronization (request 491360244e44e32ff4d8cd650f7cd09503fb65f3:98748).
 1:S 22 Nov 2020 07:39:54.716 * Successful partial resynchronization with master.
 1:S 22 Nov 2020 07:39:54.733 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:signal-handler (1606059465) Received SIGTERM scheduling shutdown...
+1:S 22 Nov 2020 15:37:45.737 # User requested shutdown...
+1:S 22 Nov 2020 15:37:45.745 * Removing the pid file.
+1:S 22 Nov 2020 15:37:45.752 # Redis is now ready to exit, bye bye...
+1:C 22 Nov 2020 15:38:33.921 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Nov 2020 15:38:33.923 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Nov 2020 15:38:33.926 # Configuration loaded
+1:M 22 Nov 2020 15:38:33.937 * Node configuration loaded, I'm cf6e67403569e699f4615599cf8ce999b261dddb
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Nov 2020 15:38:33.949 # Server initialized
+1:M 22 Nov 2020 15:38:33.952 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 22 Nov 2020 15:38:33.959 * DB loaded from disk: 0.004 seconds
+1:M 22 Nov 2020 15:38:33.961 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:M 22 Nov 2020 15:38:33.963 * Ready to accept connections
+1:S 22 Nov 2020 15:38:33.967 * Discarding previously cached master state.
+1:S 22 Nov 2020 15:38:33.970 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 22 Nov 2020 15:38:33.973 # Cluster state changed: ok
+1:S 22 Nov 2020 15:38:34.987 * Connecting to MASTER 192.168.1.4:6422
+1:S 22 Nov 2020 15:38:34.989 * MASTER <-> REPLICA sync started
+1:S 22 Nov 2020 15:38:35.478 * Non blocking connect for SYNC fired the event.
+1:S 22 Nov 2020 15:38:35.485 * Master replied to PING, replication can continue...
+1:S 22 Nov 2020 15:38:35.495 * Trying a partial resynchronization (request ba1a63cfc701e8f712caa796d86f4f688c638605:1).
+1:S 22 Nov 2020 15:38:35.535 * Full resync from master: 44825cad153d0647d8bcfc415625d0d4f27b4844:0
+1:S 22 Nov 2020 15:38:35.551 * Discarding previously cached master state.
+1:S 22 Nov 2020 15:38:35.584 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 22 Nov 2020 15:38:35.617 * MASTER <-> REPLICA sync: Flushing old data
+1:S 22 Nov 2020 15:38:35.623 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 22 Nov 2020 15:38:35.629 * MASTER <-> REPLICA sync: Finished with success
+1:signal-handler (1606059906) Received SIGTERM scheduling shutdown...
+1:S 22 Nov 2020 15:45:06.917 # User requested shutdown...
+1:S 22 Nov 2020 15:45:06.920 * Removing the pid file.
+1:S 22 Nov 2020 15:45:06.928 # Redis is now ready to exit, bye bye...
+1:C 22 Nov 2020 15:45:17.634 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Nov 2020 15:45:17.635 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Nov 2020 15:45:17.637 # Configuration loaded
+1:M 22 Nov 2020 15:45:17.644 * Node configuration loaded, I'm cf6e67403569e699f4615599cf8ce999b261dddb
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Nov 2020 15:45:17.652 # Server initialized
+1:M 22 Nov 2020 15:45:17.654 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 22 Nov 2020 15:45:17.661 * Module 'bf' loaded from /redis/redisbloom.so
+1:M 22 Nov 2020 15:45:17.666 * DB loaded from disk: 0.003 seconds
+1:M 22 Nov 2020 15:45:17.668 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:M 22 Nov 2020 15:45:17.670 * Ready to accept connections
+1:S 22 Nov 2020 15:45:17.676 * Discarding previously cached master state.
+1:S 22 Nov 2020 15:45:17.678 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 22 Nov 2020 15:45:17.680 # Cluster state changed: ok
+1:S 22 Nov 2020 15:45:18.687 * Connecting to MASTER 192.168.1.4:6422
+1:S 22 Nov 2020 15:45:18.689 * MASTER <-> REPLICA sync started
+1:S 22 Nov 2020 15:45:18.691 * Non blocking connect for SYNC fired the event.
+1:S 22 Nov 2020 15:45:18.692 * Master replied to PING, replication can continue...
+1:S 22 Nov 2020 15:45:18.695 * Trying a partial resynchronization (request 44825cad153d0647d8bcfc415625d0d4f27b4844:1).
+1:S 22 Nov 2020 15:45:18.703 * Full resync from master: 3e6b679433d108bf5183957701fae67ab7d2a8e2:0
+1:S 22 Nov 2020 15:45:18.718 * Discarding previously cached master state.
+1:S 22 Nov 2020 15:45:18.807 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 22 Nov 2020 15:45:18.810 * MASTER <-> REPLICA sync: Flushing old data
+1:S 22 Nov 2020 15:45:18.812 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 22 Nov 2020 15:45:18.814 * MASTER <-> REPLICA sync: Finished with success
+1:signal-handler (1606060034) Received SIGTERM scheduling shutdown...
+1:S 22 Nov 2020 15:47:14.146 # User requested shutdown...
+1:S 22 Nov 2020 15:47:14.149 * Removing the pid file.
+1:S 22 Nov 2020 15:47:14.153 # Redis is now ready to exit, bye bye...
+1:C 22 Nov 2020 15:47:22.282 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Nov 2020 15:47:22.286 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Nov 2020 15:47:22.290 # Configuration loaded
+1:M 22 Nov 2020 15:47:22.307 * No cluster configuration found, I'm d24cdb095e0e2dd82e22c78894942f759a5c4d57
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in cluster mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6423
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Nov 2020 15:47:22.321 # Server initialized
+1:M 22 Nov 2020 15:47:22.325 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 22 Nov 2020 15:47:22.340 * Module 'bf' loaded from /redis/redisbloom.so
+1:M 22 Nov 2020 15:47:22.358 * DB loaded from disk: 0.012 seconds
+1:M 22 Nov 2020 15:47:22.363 * Ready to accept connections
+1:M 22 Nov 2020 15:47:46.839 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
+1:M 22 Nov 2020 15:47:46.938 # IP address for this node updated to 192.168.1.5
+1:S 22 Nov 2020 15:47:50.862 * Before turning into a replica, using my master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 22 Nov 2020 15:47:50.864 # Cluster state changed: ok
+1:S 22 Nov 2020 15:47:51.648 * Connecting to MASTER 192.168.1.4:6422
+1:S 22 Nov 2020 15:47:51.651 * MASTER <-> REPLICA sync started
+1:S 22 Nov 2020 15:47:51.654 * Non blocking connect for SYNC fired the event.
+1:S 22 Nov 2020 15:47:51.656 * Master replied to PING, replication can continue...
+1:S 22 Nov 2020 15:47:51.658 * Trying a partial resynchronization (request 9dc3f26b076f8737d41f5933d43d0e0277d502de:1).
+1:S 22 Nov 2020 15:47:51.666 * Full resync from master: b378726249d47599d467a91f66ec8ce9c4c12e01:0
+1:S 22 Nov 2020 15:47:51.668 * Discarding previously cached master state.
+1:S 22 Nov 2020 15:47:51.757 * MASTER <-> REPLICA sync: receiving 175 bytes from master
+1:S 22 Nov 2020 15:47:51.768 * MASTER <-> REPLICA sync: Flushing old data
+1:S 22 Nov 2020 15:47:51.773 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 22 Nov 2020 15:47:51.781 * MASTER <-> REPLICA sync: Finished with success
