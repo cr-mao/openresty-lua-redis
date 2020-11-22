@@ -66,3 +66,31 @@ module lua-resty-consul-0.3.2
   section 6332 7433 txn
 
 # END lua-resty-consul
+# BEGIN lua-resty-mlcache
+
+dist lua-resty-mlcache-2.4.1
+  aliases resty.mlcache
+  modules lua-resty-mlcache-2.4.1
+
+module lua-resty-mlcache-2.4.1
+  aliases resty.mlcache
+  section 18 3827 lua-resty-mlcache
+  section 3827 5934 synopsis
+  section 5934 6545 requirements
+  section 6545 6930 installation
+  section 6930 38313 methods
+  section 6948 13528 new
+  section 13528 23429 get
+  section 23429 26556 get_bulk
+  section 26556 27591 new_bulk
+  section 27591 28222 each_bulk_res
+  section 28222 30189 peek
+  section 30189 31987 set
+  section 31987 32747 delete
+  section 32747 34142 purge
+  section 34142 38313 update
+  section 38313 38506 resources
+  section 38506 38563 changelog
+  section 38563 39102 license
+
+# END lua-resty-mlcache

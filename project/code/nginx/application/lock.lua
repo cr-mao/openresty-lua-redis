@@ -63,6 +63,7 @@ if type(key) == "table" then
     )
     if res.status == 200 then
         ngx.say(res.body)
+        --  设置缓存
     end
     lock:unlock()
 end

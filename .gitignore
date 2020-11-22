@@ -3,4 +3,3 @@
 *.gz
 **/*.log
 **/*.rdb
-./docker/redis_bak
