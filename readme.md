@@ -1,18 +1,29 @@
+## openresty+lua+redis 
 
-## 环境构建
-自定义网络
+本项目目的
+
+ - 应用openresty+lua 通用http服务网关解决方案
+ 
+ - 深入应用redis使用场景
+
+
+
+### 环境构建
+采用docker构建环境
+
+#### 1.自定义网络
 ```shell 
 docker network create  --subnet=192.168.0.0/16  redis-network
 ```
 
-openresty环境
+#### 2.openresty环境
 ```shell 
 cd docker/nginx
 docker build -t  myopenresty . 
 docker-compose up -d
 ```
 
-php + mysql环境
+#### 3.php + mysql环境
 ```shell 
 cd docker/php
 docker build -t  php-fpm-with-redis-swoole .
@@ -20,7 +31,7 @@ docker-compose up -d
 ```
 
 
-redis集群环境构建
+#### 4.redis集群环境
 ```shell 
 cd docker/redis
 docker build -t redis5 .
@@ -35,12 +46,12 @@ redis-cli  -h 192.168.1.2 -p 6420 -c
 ```
 
 
-## 文档
+### 文档
 
 [01-openresty使用动态负载均衡](01-openresty使用动态负载均衡.md)
 
 [02-lua连接redis集群](02-lua连接redis集群.md)
 
-[03缓存.md](03缓存.md)
+[03缓存.md](03-缓存击穿.md)
 
-[04布隆过滤器.md](04布隆过滤器.md)
+[04布隆过滤器.md](04-缓存穿透.md)

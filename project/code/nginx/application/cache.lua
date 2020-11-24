@@ -14,6 +14,7 @@ local mlcache = require "resty.mlcache"
 local function fetch_shop(key)
     ngx.say("into l3 ")
     ngx.log(ngx.ERR, "请求到l3 了", key)
+    -- 布隆过滤器
     return "id=10"
 end
 

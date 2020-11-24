@@ -1,21 +1,25 @@
-启动consul
+## openresty使用动态负载均衡
+
+采用新浪微博开源[https://github.com/weibocom/nginx-upsync-module](https://github.com/weibocom/nginx-upsync-module)做动态负载均衡
+
+#### 启动consul
 ```shell   
 docker run -d  --net redis-network --ip 192.168.1.20 -p 8700:8500 -h node1 --name openresty-redis-consul  consul1.4  ./consul  agent -server -bootstrap-expect=1  -data-dir /tmp/consul -node=node1 -bind=192.168.1.20 -client 0.0.0.0  -ui
 ```
 
-注册 2台 应用层 nginx
+####  向consul注册2台应用层nginx的地址
 ```shell  
 curl -X PUT -d '{"weight":1,"max_fails":2,"fail_timeout":10}' http://127.0.0.1:8700/v1/kv/upstreams/servers/192.168.1.9:80
 curl -X PUT -d '{"weight":1,"max_fails":2,"fail_timeout":10}' http://127.0.0.1:8700/v1/kv/upstreams/servers/192.168.1.10:80
 ```
 
-分发层
 
-nginx-distribution  nginx.conf
+#### 分发层 nginx 配置
 
-**注意** /usr/local/openresty/nginx/conf/servers.conf 要提前创建
+nginx-distribution容器 对应nginx.conf 如下
 
-```
+
+```nginx
 worker_processes  1;
 daemon off;
 events {
@@ -61,3 +65,4 @@ http {
 }
 
 ```
+**注意** /usr/local/openresty/nginx/conf/servers.conf 要提前创建

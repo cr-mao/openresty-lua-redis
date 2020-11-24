@@ -506,3 +506,21 @@
 1:M 23 Nov 2020 12:11:00.787 # Connection with replica 192.168.1.5:6423 lost.
 1:M 23 Nov 2020 12:11:01.113 * Replica 192.168.1.5:6423 asks for synchronization
 1:M 23 Nov 2020 12:11:01.116 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 52340.
+1:M 23 Nov 2020 19:02:53.399 # Disconnecting timedout replica: 192.168.1.5:6423
+1:M 23 Nov 2020 19:02:53.401 # Connection with replica 192.168.1.5:6423 lost.
+1:M 23 Nov 2020 19:02:53.620 * Replica 192.168.1.5:6423 asks for synchronization
+1:M 23 Nov 2020 19:02:53.622 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 71632.
+1:M 24 Nov 2020 01:27:49.248 # Connection with replica 192.168.1.5:6423 lost.
+1:M 24 Nov 2020 01:27:49.383 * Replica 192.168.1.5:6423 asks for synchronization
+1:M 24 Nov 2020 01:27:49.390 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 71660.
+1:M 24 Nov 2020 05:10:20.403 # Connection with replica 192.168.1.5:6423 lost.
+1:M 24 Nov 2020 05:10:20.419 * Replica 192.168.1.5:6423 asks for synchronization
+1:M 24 Nov 2020 05:10:20.422 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 84764.
+1:M 24 Nov 2020 11:38:08.042 # Disconnecting timedout replica: 192.168.1.5:6423
+1:M 24 Nov 2020 11:38:08.048 # Connection with replica 192.168.1.5:6423 lost.
+1:M 24 Nov 2020 11:38:08.125 * Replica 192.168.1.5:6423 asks for synchronization
+1:M 24 Nov 2020 11:38:08.128 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 116362.
+1:M 24 Nov 2020 13:04:45.894 # Disconnecting timedout replica: 192.168.1.5:6423
+1:M 24 Nov 2020 13:04:45.895 # Connection with replica 192.168.1.5:6423 lost.
+1:M 24 Nov 2020 13:04:45.967 * Replica 192.168.1.5:6423 asks for synchronization
+1:M 24 Nov 2020 13:04:45.972 * Partial resynchronization request from 192.168.1.5:6423 accepted. Sending 0 bytes of backlog starting from offset 118448.

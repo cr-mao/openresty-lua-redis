@@ -1,14 +1,14 @@
 
+## lua连接redis集群
 
 ### 使用resty-redis-cluster  操作redis集群
 https://github.com/steve0511/resty-redis-cluster 
 老版本 
 
-见 ./project/code/nginx/application/common/resty-redis-cluster-master
+使用见 ./project/code/nginx/application/common/resty-redis-cluster-master
 README.md
 
-so文件需要make 
-
+so文件需要手动make 
 
 
 ### 应用层 nginx 相应配置
@@ -100,39 +100,21 @@ end
 
 
 
-#### 使用OpenResty 组件管理工具   opm 下载 操作consul的组件
+####   opm 下载 操作consul的组件
 
-OpenResty 维护一个官方组件库（opm.openresty.org）,opm 就是库的客户端，可以把组件库里的组件下载到本地，并管理本地的组件列表。
-opm 的用法很简单，常用的命令有：
+OpenResty 维护一个官方组件库（opm.openresty.org）,opm就是库的客户端，可以把组件库里的组件下载到本地，并管理本地的组件列表。
 
-
-search：以关键字搜索关键的组件。
-
-get：安装功能组件（注意不是 install）。
-
-info：显示已安装组件的详细信息。
-
-list：列出所有本地已经安装的组件。
-
-upgrad：更新某个已安装组件。
-
-update：更新所有已安装组件。
-
-remove：移除某个已安装组件。
 
 opm 默认的操作目录是 “/usr/local/openresty/site”，但是也可以在命令行参数 “--install-dir=PATH” 安装到其他目录，或者用参数 “–cwd” 安装到当前目录的
 "./resty_module/" 目录里。
 
-注意：要使用opm我们的环境当中还缺少一个依赖 
+注意：要使用opm 可能还缺少一个依赖 
 
 ```shell
  # ln -s `pwd`/opm  /usr/local/bin/opm
 
 yum install perl-Digest-MD5 -y
-
-
 opm search consul 
-
 # 安装操作consul组件
 opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/lua-resty-consul
 
@@ -140,19 +122,9 @@ opm --install-dir=/usr/local/openresty/lualib/project/common get  hamishforbes/l
 
 
 
- syntax：lua_shared_dict <name> <size>
- 
- 声明一个共享内存区域 name，以充当基于 Lua 字典 ngx.shared. 的共享存储。 共享内存总是被当前 Nginx 服务器实例中所有的 Nginx worker 进程所共享。
- 
- 
-**核心的api地址**
- https://github.com/openresty/lua-nginx-module
- 
- 
- #### 从consul中获得redis 节点地址，放到 共享 lua_shared_dict.redis_cluster_addr中
+####  redis 节点注册到consul
 
-
-```redis 节点注册到consul
+```shell
 curl -X PUT -d '192.168.1.2:6420' http://127.0.0.1:8700/v1/kv/redis-cluster-1/
 curl -X PUT -d '192.168.1.3:6421' http://127.0.0.1:8700/v1/kv/redis-cluster-2/
 curl -X PUT -d '192.168.1.4:6422' http://127.0.0.1:8700/v1/kv/redis-cluster-3/
@@ -163,6 +135,22 @@ curl -X PUT -d '192.168.1.7:6425' http://127.0.0.1:8700/v1/kv/redis-cluster-6/
 
 
 
+
+
+ 
+ #### 从consul中获得redis节点地址，放到共享lua_shared_dict.redis_cluster_addr中
+
+
+**lua-nginx-module 核心的api地址**
+ [https://github.com/openresty/lua-nginx-module](https://github.com/openresty/lua-nginx-module)
+
+
+ `syntax：lua_shared_dict <name> <size>`
+ 
+ 声明一个共享内存区域 name，以充当基于 Lua 字典 ngx.shared. 的共享存储。 
+ 共享内存总是被当前 Nginx 服务器实例中所有的 Nginx worker 进程所共享。
+ 
+ 
 nginx增加
 
 ```nginx 
@@ -172,5 +160,7 @@ nginx增加
     init_worker_by_lua_file /usr/local/openresty/lualib/project/init.lua;
 ```
 代码见
+```shell 
 ./project/code/nginx/application/init.lua
 ./project/code/nginx/application/application.lua
+```

@@ -500,3 +500,22 @@
 1:M 23 Nov 2020 12:11:00.105 # Connection with replica 192.168.1.7:6425 lost.
 1:M 23 Nov 2020 12:11:00.132 * Replica 192.168.1.7:6425 asks for synchronization
 1:M 23 Nov 2020 12:11:00.137 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 52277.
+1:M 23 Nov 2020 19:02:52.683 # Disconnecting timedout replica: 192.168.1.7:6425
+1:M 23 Nov 2020 19:02:53.209 # Connection with replica 192.168.1.7:6425 lost.
+1:M 23 Nov 2020 19:02:53.271 * Replica 192.168.1.7:6425 asks for synchronization
+1:M 23 Nov 2020 19:02:53.275 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 72264.
+1:M 24 Nov 2020 01:27:49.767 # Disconnecting timedout replica: 192.168.1.7:6425
+1:M 24 Nov 2020 01:27:49.780 # Connection with replica 192.168.1.7:6425 lost.
+1:M 24 Nov 2020 01:27:49.890 * Replica 192.168.1.7:6425 asks for synchronization
+1:M 24 Nov 2020 01:27:49.901 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 72292.
+1:M 24 Nov 2020 05:10:20.310 # Disconnecting timedout replica: 192.168.1.7:6425
+1:M 24 Nov 2020 05:10:20.316 # Connection with replica 192.168.1.7:6425 lost.
+1:M 24 Nov 2020 05:10:20.332 * Replica 192.168.1.7:6425 asks for synchronization
+1:M 24 Nov 2020 05:10:20.335 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 85396.
+1:M 24 Nov 2020 11:38:08.868 # Disconnecting timedout replica: 192.168.1.7:6425
+1:M 24 Nov 2020 11:38:08.879 # Connection with replica 192.168.1.7:6425 lost.
+1:M 24 Nov 2020 11:38:08.908 * Replica 192.168.1.7:6425 asks for synchronization
+1:M 24 Nov 2020 11:38:08.912 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 116994.
+1:M 24 Nov 2020 13:04:45.641 # Connection with replica 192.168.1.7:6425 lost.
+1:M 24 Nov 2020 13:04:45.678 * Replica 192.168.1.7:6425 asks for synchronization
+1:M 24 Nov 2020 13:04:45.680 * Partial resynchronization request from 192.168.1.7:6425 accepted. Sending 0 bytes of backlog starting from offset 119080.
