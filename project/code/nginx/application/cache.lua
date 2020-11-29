@@ -7,6 +7,12 @@
 local key = ngx.re.match(ngx.var.request_uri, "/([0-9]+).html")
 local mlcache = require "resty.mlcache"
 local common = require "resty.common"
+local template = require "resty.template"
+
+template.render("index.html",{
+    title = "crmao的商城",
+    category = {"团购促销","名师荟萃","艺品驿站","欧式摆件"}
+})
 
 -- l3的回调
 
