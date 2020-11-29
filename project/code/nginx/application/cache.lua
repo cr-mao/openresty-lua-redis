@@ -6,16 +6,27 @@
 
 local key = ngx.re.match(ngx.var.request_uri, "/([0-9]+).html")
 local mlcache = require "resty.mlcache"
+local common = require "resty.common"
 
 -- l3的回调
 
 
 -- 6秒 会被请求一次，
 local function fetch_shop(key)
-    ngx.say("into l3 ")
-    ngx.log(ngx.ERR, "请求到l3 了", key)
+    --ngx.say("into l3 ")
+    --ngx.log(ngx.ERR, "请求到l3 了", key)
     -- 布隆过滤器
-    return "id=10"
+    --return "id=10"
+    -- http://127.0.0.1:8001/111.html
+    --  bf.add shop_list 111
+    if (common.filter('shop_list', key) == 1) then
+        local content = common.send('/index.php')
+        if content == nil then
+            return
+        end
+        return content
+    end
+    return ""
 end
 
 if type(key) == "table" then
@@ -29,7 +40,7 @@ if type(key) == "table" then
     if not cache then
         ngx.log(ngx.ERR, "缓存创建失败", err)
     end
-    local shop_detail, err,level = cache:get(key[1], nil, fetch_shop, key[1])
+    local shop_detail, err, level = cache:get(key[1], nil, fetch_shop, key[1])
 
     if err then
         ngx.log(ngx.ERR, "could not retrieve shop: ", err)

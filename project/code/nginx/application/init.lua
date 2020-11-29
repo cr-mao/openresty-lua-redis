@@ -1,6 +1,6 @@
 --进程启动触发
 --
-local delay = 5
+local delay = 50
 local handler
 handler = function (premature)
     local resty_consul = require('resty.consul')
