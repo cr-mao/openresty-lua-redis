@@ -1,6 +1,5 @@
 ## openresty+lua+redis 
 
-本项目目的
 
  - 应用openresty+lua 通用http服务网关解决方案
  
