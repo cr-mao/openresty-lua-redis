@@ -7,13 +7,17 @@
 local key = ngx.re.match(ngx.var.request_uri, "/([0-9]+).html")
 local mlcache = require "resty.mlcache"
 local common = require "resty.common"
+
+--ngx.say(type(ngx.ctx.redisObject))
+
+--[[
 local template = require "resty.template"
 
 template.render("index.html",{
     title = "crmao的商城",
     category = {"团购促销","名师荟萃","艺品驿站","欧式摆件"}
 })
-
+--]]
 -- l3的回调
 
 
@@ -25,14 +29,22 @@ local function fetch_shop(key)
     --return "id=10"
     -- http://127.0.0.1:8001/111.html
     --  bf.add shop_list 111
-    if (common.filter('shop_list', key) == 1) then
-        local content = common.send('/index.php')
-        if content == nil then
+    --利用布隆过滤器判断
+    if (common.filter('shop_list',key) == 1 ) then
+        -- redis当中是否有值
+        local cacheData=common.read('product_image_'..key)
+        if cacheData ~= ngx.null then
+            ngx.say("redis exists")
+            return cacheData
+        end
+        --最后才到源服务器去取
+        local content=common.send('/producer.php?method=updateCacheImage&id='..key)
+        if content == ngx.null then
             return
         end
         return content
     end
-    return ""
+    return
 end
 
 if type(key) == "table" then
@@ -52,9 +64,10 @@ if type(key) == "table" then
         ngx.log(ngx.ERR, "could not retrieve shop: ", err)
         return
     end
-
+    -- 进入到第三级缓存，即没命中缓存 去php服务器获得数据，再缓存
     if level == 3 then
-        ngx.say(shop_detail)
+        --ngx.say("走第三级缓存，去php服务器获得数据")
+        ngx.say("san ji")
         cache:set(key[1], nil, shop_detail)
     end
     ngx.say(shop_detail)
